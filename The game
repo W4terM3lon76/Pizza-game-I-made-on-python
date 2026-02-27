@@ -1,0 +1,70 @@
+import time
+print("*                                 *")
+print("*                                 *")
+print("*                                 *")
+print("*                                 *")
+print("*                                 *")
+print("===welcome to the pizzatron 2000===")
+q1 = input("do you want to make a pizza? (yes/no): ")
+
+if q1.lower() == "yes":
+    
+    print("loading.....")
+    time.sleep(1)
+elif q1.lower() == "no":
+    
+    print("why?")
+else:
+    print("Please enter a valid answer.")
+  
+q2 = input("do you want to add the dough? (yes/no): ")
+
+if q2.lower() == "yes":
+
+    print("processing...")
+    time.sleep(2)
+elif q2.lower() == "no":
+
+    print("do you even want to make a pizza?")
+else:
+    print("Please enter a valid answer.")
+
+size = input("what size? (small/medium/big): ")
+
+if size.lower() == "big":
+
+    print("excellent choice if you want to share with your friends")
+    time.sleep(2)
+    print("processing...")
+elif size.lower() == "medium":
+
+    print("great choice if you're hungry")
+    time.sleep(2)
+    print("processing...")
+elif size.lower() == "small":
+    
+    print("good choice if you're on a budget")
+    time.sleep(2)
+    print("processing...")
+else:
+    print("Please enter a valid answer.")
+    
+    
+q3 = input("do you want to add the sauce? (yes/no): ")
+
+if q3.lower() == "yes":
+    time.sleep(2)
+    print("processing...")
+elif q3.lower() == "no":
+    
+    print("You want a pizza with nothing?")
+else:
+    print("Please enter a valid answer.")
+    
+toppings = input("what toppings do you want?: ")
+print("loading...")
+print("wait 3 seconds")
+time.sleep(3)
+print("your",size,toppings,"pizza is done")
+time.sleep(2)
+print("enjoy")
